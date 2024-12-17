@@ -1,0 +1,96 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #f8f9fa;
+	color: #343a40;
+}
+
+.container {
+	margin-top: 30px;
+	max-width: 1000px;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 30px;
+	color: #007bff;
+}
+
+.user-details {
+	background: white;
+	padding: 30px;
+	border-radius: 12px;
+	box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+	margin-bottom: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	align-items: center;
+}
+
+.user-details img {
+	max-width: 200px;
+	height: auto;
+	border-radius: 12px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	flex: 1 1 200px;
+}
+
+.details-content {
+	flex: 2 1 400px;
+}
+
+.details-content ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.details-content li {
+	margin-bottom: 15px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.details-content li i {
+	color: #007bff;
+}
+
+.btn-volver {
+	display: block;
+	margin: 1rem auto;
+}
+
+.action-buttons {
+	margin-top: 20px;
+	display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.action-buttons .btn {
+	margin-right: 10px;
+	transition: background-color 0.3s ease, color 0.3s ease;
+	margin-bottom: 10px;
+	padding: 5px 10px;
+    font-size: 0.875em;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.action-buttons .btn:hover {
+	background-color: #0056b3;
+	color: #ffffff;
+}
+
+@media ( max-width : 768px) {
+	.user-details {
+		flex-direction: column;
+		text-align: center;
+	}
+	.user-details img {
+		margin-bottom: 20px;
+	}
+	.details-content {
+		flex: 1;
+	}
+}

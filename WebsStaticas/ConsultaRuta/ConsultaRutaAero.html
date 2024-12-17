@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>ConsultaRuta</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Nunito&amp;display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans&amp;display=swap"
+    />
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/Ludens---Show-Details-v2.css" />
+    <link rel="stylesheet" href="assets/css/Soft-ui-Navbar.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-4 col-xxl-3">
+          <div
+            id="offcanvas-menu"
+            class="offcanvas offcanvas-start bg-body show visible"
+            tabindex="-1"
+            data-bs-backdrop="false"
+            style="width: 212px"
+          >
+            <div
+              class="offcanvas-body d-flex flex-column justify-content-between pt-0"
+              style="padding-right: 12px; margin-right: -9px"
+            >
+              <div>
+                <hr class="mt-0" />
+                <ul class="nav nav-pills flex-column mb-auto">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active link-light"
+                      href="../Menu/Menu_Aerolinea.html"
+                      aria-current="page"
+                      ><svg
+                        class="bi bi-house-door me-2"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1em"
+                        height="1em"
+                        fill="currentColor"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z"
+                        ></path>
+                      </svg>
+                      Home
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link link-body-emphasis"
+                      href="../listar_UsuariosAero.html"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1em"
+                        height="1em"
+                        fill="currentColor"
+                        viewBox="0 0 16 16"
+                        class="bi bi-people me-2"
+                      >
+                        <path
+                          d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"
+                        ></path></svg
+                      >Consulta Usuarios</a
+                    >
+                  </li>
+                  <li class="nav-item"></li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link link-body-emphasis"
+                      href="../Consulta paquete/ConsultaPaqueteAero.html"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1em"
+                        height="1em"
+                        fill="currentColor"
+                        viewBox="0 0 16 16"
+                        class="bi bi-backpack2 me-2"
+                      >
+                        <path
+                          d="M4.04 7.43a4 4 0 0 1 7.92 0 .5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14"
+                        ></path>
+                        <path
+                          fill-rule="evenodd"
+                          d="M4 9.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm1 .5v3h6v-3h-1v.5a.5.5 0 0 1-1 0V10z"
+                        ></path>
+                        <path
+                          d="M6 2.341V2a2 2 0 1 1 4 0v.341c2.33.824 4 3.047 4 5.659v1.191l1.17.585a1.5 1.5 0 0 1 .83 1.342V13.5a1.5 1.5 0 0 1-1.5 1.5h-1c-.456.607-1.182 1-2 1h-7a2.497 2.497 0 0 1-2-1h-1A1.5 1.5 0 0 1 0 13.5v-2.382a1.5 1.5 0 0 1 .83-1.342L2 9.191V8a6.002 6.002 0 0 1 4-5.659M7 2v.083a6.04 6.04 0 0 1 2 0V2a1 1 0 0 0-2 0M3 13.5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5V8A5 5 0 0 0 3 8zm-1-3.19-.724.362a.5.5 0 0 0-.276.447V13.5a.5.5 0 0 0 .5.5H2v-3.691Zm12 0V14h.5a.5.5 0 0 0 .5-.5v-2.382a.5.5 0 0 0-.276-.447L14 10.309Z"
+                        ></path></svg
+                      >&nbsp;Consulta Paquetes</a
+                    >
+                  </li>
+                  <li>
+                    <a class="nav-link link-body-emphasis" href="../ConsultaVuelo/ConsultaReservaVuelo/consultaReservaVueloAero.html"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1em"
+                        height="1em"
+                        fill="currentColor"
+                        viewBox="0 0 16 16"
+                        class="bi bi-calendar-date me-2"
+                      >
+                        <path
+                          d="M6.445 11.688V6.354h-.633A12.6 12.6 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61h.675zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82h-.684zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23"
+                        ></path>
+                        <path
+                          d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"
+                        ></path></svg
+                      >&nbsp;Consulta Reservas</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link link-body-emphasis"
+                      href="../Alta ruta/AltaRutaAero.html"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1em"
+                        height="1em"
+                        fill="currentColor"
+                        viewBox="0 0 16 16"
+                        class="bi bi-map me-2"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103M10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8zm-6-.8V1.11l-4 .8v12.98z"
+                        ></path></svg
+                      >&nbsp;Alta Ruta de Vuelo</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link link-body-emphasis"
+                      href="../AltaVuelo/AltaVuelo.html"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1em"
+                        height="1em"
+                        fill="currentColor"
+                        viewBox="0 0 16 16"
+                        class="bi bi-airplane me-2"
+                      >
+                        <path
+                          d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849m.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1c-.213 0-.458.158-.678.599"
+                        ></path></svg
+                      >&nbsp;Alta Vuelo</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col" style="width: 846px; margin: 0px 0px 0px 200px">
+      <nav
+        class="navbar navbar-expand-md navbar navbar-main navbar-expand-lg px-0 mx-4 border-radius-xl shadow-none navbar-light"
+        id="navbarBlur"
+        navbar-scroll="true"
+        style="width: 1000px"
+      >
+        <div class="container-fluid">
+          <div class="container-fluid py-2 px-0">
+            <h6 class="font-weight-bolder mb-0">Volando.uy</h6>
+          </div>
+          <button
+            data-bs-toggle="collapse"
+            class="navbar-toggler"
+            data-bs-target="#navbar"
+          >
+            <span class="visually-hidden">Toggle navigation</span
+            ><span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4 w-100"
+            id="navbar"
+          >
+            <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+              <div class="input-group">
+                <span class="input-group-text text-body p-0 m-0"
+                  ><a class="fa fa-search p-2" aria-hidden="true"></a
+                  ><input
+                    class="form-control-sm form-control mr-2"
+                    type="text"
+                    placeholder="Escribir aca..."
+                    style="border: none"
+                /></span>
+              </div>
+            </div>
+            <ul class="navbar-nav justify-content-end">
+              <li class="nav-item d-flex align-items-center">
+                <a
+                  class="nav-link text-body font-weight-bold px-0"
+                  href="../Aerolinea/Consultar_aerolinea_loginAero.html"
+                  ><i class="fa fa-user me-sm-1"></i
+                  ><span class="d-sm-inline d-none">aerolineas</span></a
+                >
+              </li>
+              <li class="nav-item px-3 d-flex align-items-center">
+                <a class="nav-link text-body p-0" href="../inicio_de_sesion.html"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    class="fixed-plugin-button-nav cursor-pointer"
+                  >
+                    <path
+                      d="M8.51428 20H4.51428C3.40971 20 2.51428 19.1046 2.51428 18V6C2.51428 4.89543 3.40971 4 4.51428 4H8.51428V6H4.51428V18H8.51428V20Z"
+                      fill="currentColor"
+                    ></path>
+                    <path
+                      d="M13.8418 17.385L15.262 15.9768L11.3428 12.0242L20.4857 12.0242C21.038 12.0242 21.4857 11.5765 21.4857 11.0242C21.4857 10.4719 21.038 10.0242 20.4857 10.0242L11.3236 10.0242L15.304 6.0774L13.8958 4.6572L7.5049 10.9941L13.8418 17.385Z"
+                      fill="currentColor"
+                    ></path></svg
+                ></a>
+              </li>
+              <li class="nav-item dropdown pe-2 d-flex align-items-center">
+                <div>
+                  <div class="dropdown nav-item pe-2 d-flex align-items-center">
+                    <div
+                      class="dropdown-menu dropdown-menu-end px-2 py-3 me-sm-n4"
+                    >
+                      <div class="mb-2">
+                        <a
+                          class="dropdown-item border-radius-md"
+                          href="javascript:;"
+                        >
+                          <div class="d-flex py-1">
+                            <div class="my-auto">
+                              <img
+                                class="avatar avatar-sm me-3"
+                                src="assets/img/team-2.jpg"
+                              />
+                            </div>
+                            <div
+                              class="d-flex flex-column justify-content-center"
+                            >
+                              <h6 class="text-sm font-weight-normal mb-1">
+                                <span class="font-weight-bold"
+                                  >New&nbsp;message<br /></span
+                                >from Laur
+                              </h6>
+                              <p class="text-xs text-secondary mb-0">
+                                <i class="fa fa-clock-o"></i>&nbsp;13 minutes
+                                ago
+                              </p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="mb-2">
+                        <a
+                          class="dropdown-item border-radius-md"
+                          href="javascript:;"
+                        >
+                          <div class="d-flex py-1">
+                            <div class="my-auto">
+                              <img
+                                class="avatar avatar-sm me-3"
+                                src="assets/img/small-logos/logo-spotify.svg"
+                              />
+                            </div>
+                            <div
+                              class="d-flex flex-column justify-content-center"
+                            >
+                              <h6 class="text-sm font-weight-normal mb-1">
+                                <span class="font-weight-bold"
+                                  >New&nbsp;album<br /></span
+                                >by Travis Scott
+                              </h6>
+                              <p class="text-xs text-secondary mb-0">
+                                <i class="fa fa-clock-o"></i>&nbsp;1 day
+                              </p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div
+      class="container mt-5"
+      style="
+        padding-bottom: 45px;
+        margin-left: 40px;
+        padding-right: 1px;
+        margin-top: 23px;
+        padding-top: 0px;
+        margin-right: 63px;
+        padding-left: 170px;
+      "
+    >
+      <div>
+        <h2 class="fw-normal text-center mb-3" style="color: #858796">
+          Detalles de la Ruta
+        </h2>
+      </div>
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <div class="row">
+            <div
+              class="col-12 col-sm-6 col-md-4 col-lg-3"
+              style="margin-top: 12px"
+            >
+              <label class="form-label fs-6 fw-bold">Ref:</label>
+              <h5 class="fs-6">RV04</h5>
+            </div>
+            <div
+              class="col-12 col-sm-6 col-md-4 col-lg-3"
+              style="margin-top: 12px"
+            >
+              <label class="form-label fs-6 fw-bold">Aerolínea:</label>
+              <h5 class="fs-6">US01</h5>
+            </div>
+            <div
+              class="col-12 col-sm-6 col-md-4 col-lg-3"
+              style="margin-top: 12px"
+            >
+              <label class="form-label fs-6 fw-bold">Nombre:</label>
+              <h5 class="fs-6">AR1381</h5>
+            </div>
+            <div
+              class="col-12 col-sm-6 col-md-4 col-lg-3"
+              style="margin-top: 12px"
+            >
+              <label class="form-label fs-6 fw-bold">Hora:</label>
+              <h5 class="fs-6">09:35</h5>
+            </div>
+            <div
+              class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-10"
+              style="margin-top: 12px"
+            >
+              <label class="form-label fs-6 fw-bold">Descripción:</label>
+              <h5 class="fs-6">
+                <strong>Tiempo estimado de vuelo 55 minutos</strong>
+              </h5>
+            </div>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-4" style="margin-top: 12px">
+              <label class="form-label fs-6 fw-bold">Costo Turista:</label>
+              <h5 class="fs-6">160</h5>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4" style="margin-top: 12px">
+              <label class="form-label fs-6 fw-bold">Costo Ejecutivo:</label>
+              <h5 class="fs-6">400</h5>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4" style="margin-top: 12px">
+              <label class="form-label fs-6 fw-bold"
+                >Costo Equipaje Extra</label
+              >
+              <h5 class="fs-6">30</h5>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4" style="margin-top: 12px">
+              <label class="form-label fs-6 fw-bold">Ciudad Origen:</label>
+              <h5 class="fs-6">
+                <strong>Montevideo - Uruguay</strong><br /><br />
+              </h5>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4" style="margin-top: 12px">
+              <label class="form-label fs-6 fw-bold">Ciudad Destino:</label>
+              <h5 class="fs-6">
+                <strong>Buenos Aires - Argentina</strong><br /><br />
+              </h5>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4" style="margin-top: 12px">
+              <label class="form-label fs-6 fw-bold">Fecha Alta:</label>
+              <h5 class="fs-6">09/08/2024</h5>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4" style="margin-top: 12px">
+              <label class="form-label fs-6 fw-bold">Categorias:</label>
+              <h5 class="fs-6">America, Cortos</h5>
+            </div>
+          </div>
+          <hr class="mb-0 pb-0" />
+        </div>
+        <div class="card-body">
+          <label class="form-label fs-4 fw-bold">Datos extra</label>
+          <div class="row">
+            <div
+              class="col-12 col-sm-12 col-md-4 col-lg-4"
+              style="margin-top: 12px"
+            >
+              <label class="form-label fs-6 fw-bold">Estado:</label>
+              <h5 class="fs-6">Confirmada</h5>
+            </div>
+            <div
+              class="col-12 col-sm-12 col-md-4 col-lg-4"
+              style="margin-top: 12px"
+            >
+              <label class="form-label fs-6 fw-bold">Descripcion Corta:</label>
+              <h5 class="fs-6">
+                <strong
+                  >Montevideo - Buenos Aires por Aerolíneas Argentinas
+                  (AR1381)</strong
+                >
+              </h5>
+            </div>
+            <div
+              class="col-12 col-sm-12 col-md-4 col-lg-4"
+              style="margin-top: 12px"
+            >
+              <h5 class="fs-6"></h5>
+            </div>
+          </div>
+          <hr />
+          <label class="form-label fs-6 fw-bold">Imagen:</label>
+          <picture><img src="assets/img/RV03.jpg" /></picture>
+        </div>
+      </div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

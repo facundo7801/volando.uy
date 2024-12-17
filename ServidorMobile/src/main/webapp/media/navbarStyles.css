@@ -1,0 +1,319 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.nav-bar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5rem 1rem;
+	background-color: #f8f9fa;
+	overflow: hidden;
+	white-space: nowrap;
+	flex-direction: row;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	width: 100%;
+	height: 8vh;
+	gap: 1rem;
+}
+
+.izq {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.der {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.boton {
+	margin: 2rem;
+	width: 10rem;
+}
+
+.elementos {
+	margin-right: 1rem;
+	text-decoration: none;
+}
+
+a.elementos {
+	display: flex;
+	align-items: center;
+}
+
+.barra-lupa {
+	display: flex;
+	align-items: center;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: var(--bs-body-color);
+	text-align: center;
+	white-space: nowrap;
+	background-color: var(--bs-tertiary-bg);
+	border: var(--bs-border-width) solid var(--bs-border-color);
+	border-radius: var(--bs-border-radius);
+	flex-grow: 1;
+    max-width: 30%;
+}
+
+.lupa {
+	text-decoration: none;
+}
+
+.lupa:hover {
+	text-decoration: none;
+}
+
+.txtUser {
+	margin-left: 1rem;
+	display: flex;
+	align-items: center;
+}
+
+.txtUser p {
+	margin: 0 !important;
+	margin-top: 0 !important;
+	margin-bottom: 1rem !important;
+}
+
+.menu-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 15% !important;
+}
+
+.canva-lista {
+	width: 100%;
+	margin-top: 1rem;
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;  /* Asegura que los elementos se alineen desde arriba */
+	align-items: center;
+	transition: background-color 0.3s ease;
+	flex-grow: 1; /* Ocupará todo el espacio disponible */
+}
+
+.canva-lista li {
+	width: 100%;
+	display: block;
+	border-top: 1px solid rgba(0, 0, 0);
+	border-bottom: 1px solid rgba(0, 0, 0);
+}
+
+.canva-lista li a {
+	white-space: nowrap;
+	padding: 10px 15px;
+}
+
+.canva-lista li a i {
+	margin-right: 8px;
+}
+
+.canva-lista a {
+	text-decoration: none;
+	width: 100%;
+	display: block;
+	padding: 1rem;
+}
+
+.canva-lista a i {
+	margin-right: 10px;
+	font-size: 18px;
+	color: inherit !important;
+}
+
+.canva-lista a:hover {
+	background-color: rgba(219, 219, 219);
+}
+
+.boton-canva-lista{
+	margin: 1rem !important;
+	display: flex !important;
+	justify-content: center !important;
+	align-content: center !important;
+}
+
+.boton-azul {
+    margin-left: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(0, 0, 0) !important;
+    border-radius: 0.25rem;
+    color: rgba(219, 219, 219) !important;
+    background-color: #007bff !important;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.boton-azul:hover {
+    background-color: #004085 !important;
+}
+
+.boton-azul i {
+    color: #fff !important;
+}
+
+
+hr {
+	width: 100%;
+	padding: 0;
+	margin: 0 !important;
+}
+
+.canva-boton-cerrar {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.activo {
+	width: 100%;
+	background-color: rgba(7, 128, 248) !important;
+	color: rgba(255, 255, 255);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	font-weight: bold;
+}
+
+.contenedor-menu {
+	border-top: 1px solid rgba(0, 0, 0);
+}
+
+a.volandouy {
+	text-decoration: none;
+	color: inherit;
+	font-size: 2rem;
+	font-weight: bold;
+	line-height: 1.2;
+	display: inline-block;
+}
+
+.cerrar-sesion {
+	--bs-btn-color: #fff;
+	--bs-btn-bg: #dc3545;
+	--bs-btn-border-color: #dc3545;
+	--bs-btn-hover-color: #fff;
+	--bs-btn-hover-bg: #bb2d3b;
+	--bs-btn-hover-border-color: #b02a37;
+	--bs-btn-focus-shadow-rgb: 225, 83, 97;
+	--bs-btn-active-color: #fff;
+	--bs-btn-active-bg: #b02a37;
+	--bs-btn-active-border-color: #a52834;
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	--bs-btn-disabled-color: #fff;
+	--bs-btn-disabled-bg: #dc3545;
+	--bs-btn-disabled-border-color: #dc3545;
+	margin-left: 0.5rem;
+}
+
+a.elementos p {
+	margin: 0 !important;
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}
+
+.boton-menu {
+	padding: 5px 10px;
+	font-size: 1rem;
+	margin: 0.5rem;
+}
+
+a.volandouy:hover {
+	color: #0056b3;
+}
+
+.canva-lista li:last-child {
+	margin-top: auto;
+	border-top: none !important;
+	border-bottom: none !important;
+}
+
+/* Tablets */
+@media ( max-width : 1024px) {
+	.nav-bar {
+		flex-direction: row;
+		padding: 0.5rem;
+	}
+	.contenedor-menu {
+		width: 13rem !important;
+	}
+	.izq, .der {
+		width: auto;
+		margin: 0;
+	}
+	a.volandouy {
+		font-size: 1.5rem;
+	}
+	.cerrar-sesion {
+		margin-left: 0.5rem !important;
+	}
+	.barra-lupa {
+		flex-grow: 2 !important;
+    	max-width: 100%;
+		margin-right: 0.5rem;
+	}
+	.offcanvas {
+		width: 80%;
+	}
+	.txtUser p {
+		font-size: 0.85rem;
+	}
+}
+
+/* Celulares */
+@media ( max-width : 480px) {
+	.nav-bar {
+		padding: 0;
+	}
+	.contenedor-menu {
+		width: 13rem !important;
+	}
+	a.volandouy {
+		font-size: 1rem;
+		margin-right: auto;
+	}
+	.barra-lupa {
+		flex-grow: 2 !important;
+    	max-width: 150%;
+    	margin-right: 0.5rem;
+	}
+	.der {
+		display: flex;
+		align-items: center;
+		margin-left: 0.5rem;
+	}
+	.cerrar-sesion {
+		font-size: 0.7rem !important;
+		padding: 4px 6px !important;
+		flex-grow: 0 !important;
+		margin-right: 0.5rem !important;
+		margin-left: 0.5rem !important;
+	}
+	.der .otro-elemento, .der .barra-lupa {
+		flex-grow: 1;
+	}
+	.txtUser {
+		font-size: 0.8rem;
+		margin: 0;
+	}
+	.offcanvas {
+		width: 100%;
+	}
+	.canva-lista li a {
+		padding: 8px 10px;
+		font-size: 0.9rem;
+		text-align: left;
+	}
+}

@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Consultar Usuario</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Nunito&amp;display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans&amp;display=swap"
+    />
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.min.css" />
+    <link rel="stylesheet" href="../assets/css/aos.min.css" />
+    <link rel="stylesheet" href="../assets/css/Login-Form-Basic-icons.css" />
+    <link rel="stylesheet" href="../assets/css/Ludens---Show-Details-v2.css" />
+    <link rel="stylesheet" href="../assets/css/select2.css" />
+    <link rel="stylesheet" href="../assets/css/Soft-ui-Navbar.css" />
+  </head>
+
+  <body style="background: rgb(255, 255, 255)">
+    <div
+      class="row d-flex d-xl-flex justify-content-center justify-content-xl-center"
+    >
+      <div
+        class="col-1 col-xl-2 align-self-stretch me-auto"
+        style="width: 236.75px"
+      >
+        <div
+          class="offcanvas-sm offcanvas-start text-secondary-emphasis bg-body"
+          tabindex="-1"
+          data-bs-scroll="true"
+          data-aos="zoom-in-up"
+          id="offcanvas-menu"
+          style="width: 350.75px; height: 1275px; margin: -11px; padding: 0px"
+        >
+          <div class="offcanvas-header" style="height: 0px">
+            <a
+              class="link-body-emphasis d-flex align-items-center me-md-auto mb-3 mb-md-0 text-decoration-none"
+              href="/"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+                class="bi bi-bootstrap-fill me-3"
+                style="font-size: 25px"
+              >
+                <path
+                  d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z"
+                ></path>
+                <path
+                  d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396z"
+                ></path></svg
+              ><span class="fs-4">Sidebar</span></a
+            ><button
+              class="btn-close"
+              type="button"
+              aria-label="Close"
+              data-bs-dismiss="offcanvas"
+            ></button>
+          </div>
+          <div
+            class="offcanvas-body d-flex flex-column justify-content-between pt-0"
+          >
+          <div>
+            <hr class="mt-0" />
+            <ul class="nav nav-pills flex-column mb-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link link-body-emphasis"
+                  href="../Menu/Menu_Aerolinea.html"
+                  aria-current="page"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                    class="bi bi-house-door me-2"
+                  >
+                    <path
+                      d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z"
+                    ></path>
+                  </svg>
+                  Home
+                </a>
+              </li>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active link-light"
+                href="../listar_UsuariosAero.html"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                  class="bi bi-people me-2"
+                >
+                  <path
+                    d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"
+                  ></path></svg
+                >&nbsp;Consulta Usuarios</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link link-body-emphasis"
+                href="../Consulta paquete/ConsultaPaqueteAero.html"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                  class="bi bi-backpack2 me-2"
+                >
+                  <path
+                    d="M4.04 7.43a4 4 0 0 1 7.92 0 .5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 9.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm1 .5v3h6v-3h-1v.5a.5.5 0 0 1-1 0V10z"
+                  ></path>
+                  <path
+                    d="M6 2.341V2a2 2 0 1 1 4 0v.341c2.33.824 4 3.047 4 5.659v1.191l1.17.585a1.5 1.5 0 0 1 .83 1.342V13.5a1.5 1.5 0 0 1-1.5 1.5h-1c-.456.607-1.182 1-2 1h-7a2.497 2.497 0 0 1-2-1h-1A1.5 1.5 0 0 1 0 13.5v-2.382a1.5 1.5 0 0 1 .83-1.342L2 9.191V8a6.002 6.002 0 0 1 4-5.659M7 2v.083a6.04 6.04 0 0 1 2 0V2a1 1 0 0 0-2 0M3 13.5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5V8A5 5 0 0 0 3 8zm-1-3.19-.724.362a.5.5 0 0 0-.276.447V13.5a.5.5 0 0 0 .5.5H2v-3.691Zm12 0V14h.5a.5.5 0 0 0 .5-.5v-2.382a.5.5 0 0 0-.276-.447L14 10.309Z"
+                  ></path></svg
+                >&nbsp;Consulta Paquetes</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link link-body-emphasis"
+                href="../ConsultaVuelo/ConsultaReservaVuelo/consultaReservaVueloAero.html"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                  class="bi bi-calendar-date me-2"
+                >
+                  <path
+                    d="M6.445 11.688V6.354h-.633A12.6 12.6 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61h.675zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82h-.684zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23"
+                  ></path>
+                  <path
+                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"
+                  ></path></svg
+                >&nbsp;Consulta Reservas</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link link-body-emphasis"
+                href="../Alta ruta/AltaRutaAero.html"
+              >
+                <i class="fa fa-plane me-2"></i>
+                Alta de Ruta de Vuelo</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link link-body-emphasis"
+                href="../AltaVuelo/AltaVuelo.html"
+              >
+                <i class="fa fa-plane me-2"></i>
+                Alta de Vuelo</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link link-body-emphasis"
+                href="../ConsultaVuelo/ConsultaVueloAerolinea.html"
+              >
+                <i class="fa fa-plane me-2"></i>
+                Consulta Vuelo</a
+              >
+            </li>
+            </ul>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-sm-12 col-lg-10 col-xl-9 col-xxl-7 bg-white shadow-lg"
+        style="border-radius: 5px; width: 1122.75px"
+      >
+        <nav
+          class="navbar navbar-expand-md navbar navbar-main navbar-expand-lg px-0 mx-4 border-radius-xl shadow-none navbar-light"
+          id="navbarBlur"
+          navbar-scroll="true"
+          style="width: 1000.25px"
+        >
+          <div class="container-fluid">
+            <div class="container-fluid py-2 px-0">
+              <strong>Volando.uy</strong>
+            </div>
+            <button
+              data-bs-toggle="collapse"
+              class="navbar-toggler"
+              data-bs-target="#navbar"
+            >
+              <span class="visually-hidden">Toggle navigation</span
+              ><span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4 w-100"
+              id="navbar"
+            >
+              <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+                <div class="input-group">
+                  <span class="input-group-text text-body p-0 m-0"
+                    ><a class="fa fa-search p-2" aria-hidden="true"></a
+                    ><input
+                      class="form-control-sm form-control mr-2"
+                      type="text"
+                      placeholder="Escribir aca..."
+                      style="border: none"
+                  /></span>
+                </div>
+              </div>
+              <ul class="navbar-nav justify-content-end">
+                <li class="nav-item d-flex align-items-center">
+                  <i class="fa fa-user me-sm-1"></i>
+                </li>
+              </ul>
+            </div>
+            <a href="Consultar_aerolinea_loginAero.html">aerolineas</a>
+            <div>
+              <a href="../inicio_de_sesion.html"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icon-tabler-logout"
+                  style="font-size: 28px"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path
+                    d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2"
+                  ></path>
+                  <path d="M9 12h12l-3 -3"></path>
+                  <path d="M18 15l3 -3"></path></svg
+              ></a>
+            </div>
+          </div>
+        </nav>
+        <div class="container mt-5" style="padding-bottom: 45px">
+          <div>
+            <h2 class="fw-normal text-center mb-3" style="color: #858796">
+              Cliente
+            </h2>
+            <div class="row justify-content-center align-items-center">
+              <div class="col-4">
+                <picture
+                  ><img src="../assets/img/US07.jpeg" width="300" height="300"
+                /></picture>
+              </div>
+            </div>
+          </div>
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <div class="row">
+                <div
+                  class="col-12 col-sm-6 col-md-4 col-lg-3"
+                  style="margin-top: 12px"
+                >
+                  <label class="form-label fs-6 fw-bold">Nickname</label>
+                  <h5 class="fs-6"><br />ejstar<br /><br /></h5>
+                </div>
+                <div
+                  class="col-12 col-sm-6 col-md-4 col-lg-3"
+                  style="margin-top: 12px"
+                >
+                  <label class="form-label fs-6 fw-bold">Nombre</label>
+                  <h5 class="fs-6"><br />Emily</h5>
+                </div>
+                <div
+                  class="col-12 col-sm-6 col-md-4 col-lg-3"
+                  style="margin-top: 12px"
+                >
+                  <label class="form-label fs-6 fw-bold">Apellido</label>
+                  <h5 class="fs-6"><br />Johnson<br /><br /></h5>
+                </div>
+                <div
+                  class="col-12 col-sm-6 col-md-4 col-lg-3"
+                  style="margin-top: 12px"
+                >
+                  <label class="form-label fs-6 fw-bold">Email</label>
+                  <h5 class="fs-6"><br />emily.j@hotmail.com<br /><br /></h5>
+                </div>
+              </div>
+              <div class="row">
+                <div
+                  class="col-12 col-sm-6 col-md-4 col-lg-3"
+                  style="margin-top: 12px"
+                >
+                  <label class="form-label fs-6 fw-bold"
+                    >Fecha de Nacimiento</label
+                  >
+                  <h5 class="fs-6"><br />24/06/1985<br /><br /></h5>
+                </div>
+                <div
+                  class="col-12 col-sm-6 col-md-4 col-lg-3"
+                  style="margin-top: 12px"
+                >
+                  <label class="form-label fs-6 fw-bold">Nacionalidad</label>
+                  <h5 class="fs-6"><br />Estadounidense</h5>
+                </div>
+                <div
+                  class="col-12 col-sm-6 col-md-4 col-lg-3"
+                  style="margin-top: 12px"
+                >
+                  <label class="form-label fs-6 fw-bold"
+                    >Tipo de Documento</label
+                  >
+                  <h5 class="fs-6"><br />Pasaporte<br /><br /></h5>
+                </div>
+                <div
+                  class="col-12 col-sm-6 col-md-4 col-lg-3"
+                  style="margin-top: 12px"
+                >
+                  <label class="form-label fs-6 fw-bold">Nro. Documento</label>
+                  <h5 class="fs-6"><br />485719842<br /><br /></h5>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <label class="form-label fs-4 fw-bold">Vuelos</label>
+              <div class="row">
+                <div class="col-12" style="margin-top: 12px">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                      <span>No tiene vuelos&nbsp;</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <hr />
+            </div>
+            <div class="card-body">
+              <label class="form-label fs-4 fw-bold">Paquetes</label>
+              <div class="row" style="width: 857.75px">
+                <div class="col-12 col-xl-11" style="margin-top: 12px">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                      <div class="row">
+                        <div class="col-xl-4 offset-xl-0">
+                          <span style="padding-bottom: 0px; padding-right: 0px"
+                            ><br />Cruzando el charco<br /><br
+                          /></span>
+                        </div>
+                        <div class="col-xl-4">
+                          <span
+                            ><br />Escápate a Buenos Aires y<br />sumérgete en
+                            la vibrante vida de la capital argentina. Este
+                            paquete incluye vuelos directos<br /><br
+                          /></span>
+                        </div>
+                        <div
+                          class="col-xl-2 offset-xl-1"
+                          style="text-align: center; margin: 43px"
+                        >
+                          <a href="../Consulta paquete/ConsultaPaqueteAero.html"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="1em"
+                              height="1em"
+                              fill="currentColor"
+                              viewBox="0 0 16 16"
+                              class="bi bi-info-circle"
+                              style="font-size: 20px"
+                            >
+                              <path
+                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                              ></path>
+                              <path
+                                d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"
+                              ></path></svg
+                          ></a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <hr />
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+    <footer class="text-center">
+      <div class="container text-muted py-4 py-lg-5">
+        <p class="mb-0">Taller de Programación 2024</p>
+      </div>
+    </footer>
+    <div
+      class="container"
+      style="
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+      "
+    >
+      <script>
+        let email = document.getElementById("email");
+        let password = document.getElementById("password");
+        let verifyPassword = document.getElementById("verifyPassword");
+        let submitBtn = document.getElementById("submitBtn");
+        let emailErrorMsg = document.getElementById("emailErrorMsg");
+        let passwordErrorMsg = document.getElementById("passwordErrorMsg");
+
+        function displayErrorMsg(type, msg) {
+          if (type == "email") {
+            emailErrorMsg.style.display = "block";
+            emailErrorMsg.innerHTML = msg;
+            submitBtn.disabled = true;
+          } else {
+            passwordErrorMsg.style.display = "block";
+            passwordErrorMsg.innerHTML = msg;
+            submitBtn.disabled = true;
+          }
+        }
+
+        function hideErrorMsg(type) {
+          if (type == "email") {
+            emailErrorMsg.style.display = "none";
+            emailErrorMsg.innerHTML = "";
+            submitBtn.disabled = true;
+            if (passwordErrorMsg.innerHTML == "") submitBtn.disabled = false;
+          } else {
+            passwordErrorMsg.style.display = "none";
+            passwordErrorMsg.innerHTML = "";
+            if (emailErrorMsg.innerHTML == "") submitBtn.disabled = false;
+          }
+        }
+
+        // Validate password upon change
+        password.addEventListener("change", function () {
+          // If password has no value, then it won't be changed and no error will be displayed
+          if (password.value.length == 0 && verifyPassword.value.length == 0)
+            hideErrorMsg("password");
+          // If password has a value, then it will be checked. In this case the passwords don't match
+          else if (password.value !== verifyPassword.value)
+            displayErrorMsg("password", "Passwords do not match");
+          // When the passwords match, we check the length
+          else {
+            // Check if the password has 8 characters or more
+            if (password.value.length >= 8) hideErrorMsg("password");
+            else
+              displayErrorMsg(
+                "password",
+                "Password must be at least 8 characters long"
+              );
+          }
+        });
+
+        verifyPassword.addEventListener("change", function () {
+          if (password.value !== verifyPassword.value)
+            displayErrorMsg("password", "Passwords do not match");
+          else {
+            // Check if the password has 8 characters or more
+            if (password.value.length >= 8) hideErrorMsg("password");
+            else
+              displayErrorMsg(
+                "password",
+                "Password must be at least 8 characters long"
+              );
+          }
+        });
+
+        // Validate email upon change
+        email.addEventListener("change", function () {
+          // Check if the email is valid using a regular expression (string@string.string)
+          if (email.value.match(/^[^@]+@[^@]+\.[^@]+$/)) hideErrorMsg("email");
+          else displayErrorMsg("email", "Invalid email");
+        });
+      </script>
+    </div>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/aos.min.js"></script>
+    <script src="../assets/js/bs-init.js"></script>
+    <script src="../assets/js/select2-anchor.min.js"></script>
+    <script src="../assets/js/select2-placeholders.jquery.min.js"></script>
+    <script src="../assets/js/select2-placeholders.js"></script>
+    <script src="../assets/js/select2-prettify.min.js"></script>
+    <script src="../assets/js/select2-select2.full.js"></script>
+    <script src="../assets/js/select2-zcontent.js"></script>
+    <script src="../assets/js/select2.js"></script>
+  </body>
+</html>

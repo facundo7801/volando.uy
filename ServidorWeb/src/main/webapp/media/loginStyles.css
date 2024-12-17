@@ -1,0 +1,163 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body, html {
+	height: 100%;
+	margin: 0;
+	font-family: Arial, sans-serif;
+}
+
+.bg-image {
+	background-image: url('./images/background-image.jpg');
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.card {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	backdrop-filter: blur(10px); /* Efecto de desenfoque */
+	background: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+	border-radius: 10px;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+	padding: 30px;
+	max-width: 400px;
+	width: 100%;
+}
+
+h2 {
+	text-align: center;
+	margin-bottom: 1.5rem;
+	font-weight: bold;
+	color: #343a40;
+}
+
+.form-personalizado {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	width: 100%;
+}
+
+.form-outline {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.form-outline label {
+	font-weight: bold;
+	margin-bottom: 0.5rem;
+}
+
+.form-outline input {
+	width: 100%;
+	padding: 0.5rem;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.botones {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+}
+
+.btn-ingresar {
+	padding: 0.75rem;
+	font-size: 1rem;
+	border: none;
+	border-radius: 5px;
+	background-color: #0780f8;
+	color: #ffffff;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	width: 100%;
+}
+
+.btn-ingresar:hover {
+	background-color: #0056b3;
+}
+
+.btn-cargar-datos {
+	padding: 0.75rem;
+	font-size: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: #ffffff;
+	color: #0780f8;
+	cursor: pointer;
+	transition: background-color 0.3s ease, color 0.3s ease, border-color
+		0.3s ease;
+}
+
+/* Estilo cuando se hace hover al botón de Cargar Datos */
+.btn-cargar-datos:hover {
+	background-color: #f0f0f0;
+	color: #0056b3;
+	border-color: #0056b3;
+}
+/* Botón de Cargar Datos - Secundario */
+.btn-secondary {
+	flex: 1;
+	padding: 0.75rem;
+	font-size: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: #ffffff;
+	color: #0780f8;
+	cursor: pointer;
+	transition: background-color 0.3s ease, color 0.3s ease, border-color
+		0.3s ease;
+}
+
+.opciones {
+	text-align: center;
+	margin-top: 1rem;
+}
+
+.opciones a {
+	color: #007bff;
+	text-decoration: none;
+	font-weight: bold;
+	transition: color 0.3s ease;
+}
+
+.opciones a:hover {
+	color: #0056b3;
+}
+
+#error_message {
+	color: #D8000C;
+	background-color: #FFD2D2;
+	border: 1px solid #D8000C;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	text-align: center;
+	width: 100%;
+	margin-top: 10px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media ( max-width : 768px) {
+	.card {
+		width: 90%;
+		padding: 20px;
+	}
+	.form-outline input {
+		padding: 0.4rem;
+	}
+	.btn-ingresar {
+		padding: 0.6rem;
+	}
+}

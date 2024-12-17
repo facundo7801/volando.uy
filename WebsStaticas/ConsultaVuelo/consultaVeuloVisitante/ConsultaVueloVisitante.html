@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Consulta de Vuelo (visitante)</title>
+    <link rel="stylesheet" href="../../bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../styles/styles.css" />
+    <link rel="stylesheet" href="../../styles/Soft-ui-Navbar.css" />
+        <link rel="stylesheet" href="../../fonts/font-awesome.min.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <!-- Button to open sidebar -->
+        <button
+          class="btn btn-primary col-md-1"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvas-menu"
+          aria-controls="offcanvas-menu"
+        >
+          Navegar
+        </button>
+
+        <!-- Navbar brand -->
+        <a class="navbar-brand ms-3" href="#">Volando.uy</a>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <div class="input-group">
+                <span class="input-group-text text-body p-0 m-0">
+                  <a class="fa fa-search p-2" aria-hidden="true"></a>
+                  <input
+                    type="search"
+                    class="form-control"
+                    placeholder="Buscar"
+                  />
+                </span>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-body font-weight-bold px-0"
+                href="../../inicio_de_sesion.html"
+              >
+                <i class="fa fa-user me-sm-1"></i>
+                <span class="d-sm-inline d-none">Sign In</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+ <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <!-- Sidebar (offcanvas) -->
+          <div
+            class="offcanvas offcanvas-start bg-body"
+            tabindex="-1"
+            data-bs-backdrop="false"
+            id="offcanvas-menu"
+            style="width: 212px"
+          >
+            <div class="offcanvas-header">
+              <a
+                class="link-body-emphasis d-flex align-items-center me-md-auto mb-3 mb-md-0 text-decoration-none"
+                href="/"
+              >
+                <span class="fs-4"></span>
+              </a>
+              <button
+                class="btn-close"
+                type="button"
+                aria-label="Close"
+                data-bs-dismiss="offcanvas"
+              ></button>
+            </div>
+            <div
+              class="offcanvas-body d-flex flex-column justify-content-between pt-0"
+            >
+              <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                   <a
+                    class="nav-link active link-light "
+                    href="../../Menu/index.html">
+                  <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1em"
+                      height="1em"
+                      fill="currentColor"
+                      viewBox="0 0 16 16"
+                      class="bi bi-house-door me-2"
+                    >
+                      <path
+                        d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z"
+                      ></path></svg
+                    >&nbsp;Home</a
+                  >
+                </li>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link link-body-emphasis"
+                      href="../../listar_Usuarios.html"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1em"
+                        height="1em"
+                        fill="currentColor"
+                        viewBox="0 0 16 16"
+                        class="bi bi-people me-2"
+                      >
+                        <path
+                          d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"
+                        ></path></svg
+                      >&nbsp;Consulta Usuarios</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link link-body-emphasis"
+                      href="../../Consulta paquete/index.html"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1em"
+                        height="1em"
+                        fill="currentColor"
+                        viewBox="0 0 16 16"
+                        class="bi bi-backpack2 me-2"
+                      >
+                        <path
+                          d="M4.04 7.43a4 4 0 0 1 7.92 0 .5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14"
+                        ></path>
+                        <path
+                          fill-rule="evenodd"
+                          d="M4 9.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm1 .5v3h6v-3h-1v.5a.5.5 0 0 1-1 0V10z"
+                        ></path>
+                        <path
+                          d="M6 2.341V2a2 2 0 1 1 4 0v.341c2.33.824 4 3.047 4 5.659v1.191l1.17.585a1.5 1.5 0 0 1 .83 1.342V13.5a1.5 1.5 0 0 1-1.5 1.5h-1c-.456.607-1.182 1-2 1h-7a2.497 2.497 0 0 1-2-1h-1A1.5 1.5 0 0 1 0 13.5v-2.382a1.5 1.5 0 0 1 .83-1.342L2 9.191V8a6.002 6.002 0 0 1 4-5.659M7 2v.083a6.04 6.04 0 0 1 2 0V2a1 1 0 0 0-2 0M3 13.5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5V8A5 5 0 0 0 3 8zm-1-3.19-.724.362a.5.5 0 0 0-.276.447V13.5a.5.5 0 0 0 .5.5H2v-3.691Zm12 0V14h.5a.5.5 0 0 0 .5-.5v-2.382a.5.5 0 0 0-.276-.447L14 10.309Z"
+                        ></path></svg
+                      >&nbsp;Consulta Paquetes</a
+                    >
+                  </li>
+              
+                  <li class="nav-item">
+                    <a
+                      class="nav-link link-body-emphasis"
+                      href="../../ConsultaVuelo/consultaVeuloVisitante/ConsultaVueloVisitante.html"
+                    >
+                      <i class="fa fa-plane me-2"></i>
+                      Consulta Vuelo</a
+                    >
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a
+                      class="nav-link link-body-emphasis"
+                      href="../../ConsultaRuta/ConsultaRuta.html"
+                    >
+                      <i class="fa fa-plane me-2"></i>
+                      Consulta de Ruta Vuelo</a
+                    >
+                  </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="container mt-5">
+      <h1>Consulta de Vuelo</h1>
+     <form id="consultaVueloForm">
+        <label for="aerolinea">Seleccione una Aerolínea:</label>
+        <select id="aerolinea" name="aerolinea" class="form-control" required>
+          <option value="">Selecciona una aerolínea</option>
+          <option value="ar">Aerolineas Argentinas</option>
+        </select>
+
+        <!-- Select de rutas de vuelo (deshabilitado inicialmente) -->
+        <label for="rutaVuelo" class="mt-3">Seleccione una Ruta de Vuelo:</label>
+        <select id="rutaVuelo" name="rutaVuelo" class="form-control" disabled required>
+          <option value="">Selecciona una ruta</option>
+        </select>
+
+        <!-- Select de vuelos (deshabilitado inicialmente) -->
+        <label for="vuelo" class="mt-3">Seleccione un Vuelo:</label>
+        <select id="vuelo" name="vuelo" class="form-control" disabled required>
+          <option value="">Selecciona un vuelo</option>
+        </select>
+
+        <button type="submit" class="btn btn-primary mt-3">Buscar Vuelo</button>
+      </form>
+
+      <h2 class="mt-5">Resultados de la búsqueda</h2>
+      <table class="table table-striped mt-3">
+        <thead>
+          <tr>
+            <th>Aerolinea</th>
+            <th>Ruta</th>
+            <th>Nombre</th>
+            <th>Fecha</th>
+            <th>Duración (min)</th>
+            <th>Asientos Turista</th>
+            <th>Asientos Ejecutivo</th>
+            <th>Fecha Alta</th>
+            <th>Imagen vuelo</th>
+          </tr>
+        </thead>
+        <tbody id="resultadosVuelo">
+          <!-- Aquí se cargarán los resultados dinámicamente -->
+          <!-- Más resultados -->
+        </tbody>
+      </table>
+    </div>
+    <!-- Botón de Mostrar Reservas (inicialmente oculto) -->
+    <button id="mostrarReservasBtn" class="btn btn-secondary mt-3" style="display:none;" onclick="mostrarReservas()">Mostrar Reservas</button>
+
+    <!-- Tabla de reservas (inicialmente oculta) -->
+    <div id="tablaReservas" style="display:none;">
+      <h2 class="mt-5">Reservas del Vuelo</h2>
+      <table class="table table-striped mt-3">
+        <thead>
+          <tr>
+            <th>Aerolínea</th>
+            <th>Ruta</th>
+            <th>Nombre del Vuelo</th>
+            <th>Cliente</th>
+            <th>Tipo de Asiento</th>
+            <th>Cantidad de Pasajeros</th>
+            <th>Cantidad de Equipaje Extra</th>
+            <th>Fecha Reserva</th>
+            <th>Costo</th>
+          </tr>
+        </thead>
+        <tbody id="resultadosReserva">
+          <!-- Aquí se cargarán los datos de la reserva -->
+          <tr>
+            <td>Aerolineas Argentinas</td>
+            <td>AR1380 - Buenos Aires - Montevideo</td>
+            <td>AR1380939</td>
+            <td>Juan Pérez</td>
+            <td>Turista</td>
+            <td>2</td>
+            <td>1</td>
+            <td>2024-10-01</td>
+            <td>$500</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="../../bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="consultaVueloVisitante.js"></script>
+  </body>
+</html>
